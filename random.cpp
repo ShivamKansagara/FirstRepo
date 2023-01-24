@@ -3,6 +3,10 @@ using namespace std;
 int main()
 {
     int a = 0, b = 0;
-    cout << a << b;
+    int *c = &a;
+    int **d = &c;
+    a = 3;
+    cout << *c << endl;
+    cout << d;
     return 0;
 }
